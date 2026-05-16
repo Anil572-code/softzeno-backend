@@ -17,6 +17,7 @@ import { OrdersModule } from './orders/orders.module';
 import { InventoryModule } from './inventory/inventory.module';
 import { PaymentsModule } from './payments/payments.module';
 import { AiModule } from './ai/ai.module';
+import { AuthModule } from './auth/auth.module';
 @Module({
   imports: [
     ConfigModule.forRoot({
@@ -37,6 +38,7 @@ import { AiModule } from './ai/ai.module';
     InventoryModule,
     PaymentsModule,
     AiModule,
+    AuthModule,
   ],
   controllers: [AppController],
   providers: [AppService],
